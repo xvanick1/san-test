@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Fitclub San-Van Košice: posilňovňa a skupinové lekcie</title>
+<meta name="description" content="Posilňovňa a telocvičňa na Československej armády v Košiciach. Cvičiť môžete sami alebo prísť na pilates, kalanetiku či indoor cycling. Platí u nás aj karta MultiSport.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body data-page="fit">
+
+<header class="nav" data-ctx="fit"><div class="wrap">
+  <a class="logo" href="index.html" aria-label="San-Van, úvod"><img src="assets/logo.png" alt="San-Van" width="133" height="114"></a>
+  <div class="ctx" role="group" aria-label="Prevádzka"><a href="fitclub.html" data-ctx="fit" aria-current="page">Fitclub</a><a href="sauna.html" data-ctx="sauna">Sauna</a></div>
+  <ul>
+    <li class="shared"><a href="#rozvrh">Hodiny</a></li>
+    <li class="shared"><a href="#lekcie">Lekcie</a></li>
+    <li class="shared"><a href="#cennik">Cenník</a></li>
+    <li class="shared"><a href="#galeria">Galéria</a></li>
+    <li class="shared"><a href="#kontakt">Kontakt</a></li>
+  </ul>
+  <div class="calls"><a class="callb f" href="tel:+421556255645"><small>Fitclub</small>055 625 56 45</a><a class="callb s" href="tel:+421948340100"><small>Sauna</small>0948 340 100</a></div>
+  <details class="mcall"><summary>Zavolať</summary><div class="pop"><a class="callb f" href="tel:+421556255645"><small>Fitclub, Čsl. armády</small>055 625 56 45</a><a class="callb s" href="tel:+421948340100"><small>Sauna, Strojárenská</small>0948 340 100</a></div></details>
+  <details class="mmenu"><summary aria-label="Menu">Menu</summary><nav><a href="index.html">Úvod</a><span class="mh f">Fitclub</span><a href="fitclub.html">O fitclube</a><a href="fitclub.html#rozvrh">Otváracie hodiny a lekcie</a><a href="fitclub.html#lekcie">Lekcie a lektori</a><a href="fitclub.html#cennik">Cenník</a><a href="fitclub.html#galeria">Galéria</a><span class="mh s">Sauna</span><a href="sauna.html">O saune</a><a href="sauna.html#sauna-hodiny">Otváracie hodiny</a><a href="sauna.html#sauna-navsteva">Návšteva sauny</a><a href="sauna.html#sauna-cennik">Cenník</a><a href="sauna.html#galeria">Galéria</a><span class="mh">Kontakt</span><a href="index.html#kontakt">Kde nás nájdete</a></nav></details>
+</div></header>
+
+<main id="top">
+<section class="sband fit" id="fitclub">
+  <div class="bg"><img class="photo-grade" src="assets/fit-10.jpg" alt=""></div>
+  <div class="wrap">
+    <div>
+      <h1><span class="w">Fitclub</span><br>San-Van</h1>
+      <p class="where"><a class="ml" href="https://www.google.com/maps/dir/?api=1&amp;destination=Fitclub%20San-Van%2C%20%C4%8Ceskoslovenskej%20arm%C3%A1dy%201168%2F11%2C%20040%2001%20Ko%C5%A1ice" target="_blank" rel="noopener" title="Navigovať v Mapách Google">Československej armády 11</a><a class="tl" href="tel:+421556255645">055 625 56 45</a></p>
+      <p class="lede">V posilňovni je miesto pre 30 ľudí, v telocvični pre 20. Cvičiť môžete sami alebo prísť na pilates, kalanetiku či indoor cycling. Box a sebaobranu trénujete s trénerom. Chodia k nám začiatočníci aj skúsení, mladší aj starší. Ak si neviete rady, poradíme vám alebo vám zostavíme cvičebný plán.</p>
+      <div class="chips"><span>Bežiace pásy a bicykle bez príplatku</span><span>Cvičebné plány na mieru</span><span>Doplnky výživy a poradenstvo</span><span>Karty MultiSport</span><span>Platba v hotovosti aj kartou</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="dline"></div>
+<section class="sec dark" id="rozvrh"><div class="wrap">
+  <div class="head-l"><div class="t"><h2 class="big">Otváracie hodiny</h2><p>Vyberte si z <span data-lessons-count>piatich</span> skupinových lekcií a rezervujte si svoje miesto.</p></div><a class="btn btn-red" href="tel:+421556255645">Rezervovať miesto</a></div>
+  <div class="sched-wrap">
+    <div>
+      <h3 class="wk-h">Rozvrh lekcií</h3>
+      <table class="tt">
+        <thead><tr><th class="time"><span class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Čas</span></th><th>Pondelok</th><th>Utorok</th><th>Streda</th><th>Štvrtok</th><th>Piatok</th></tr></thead>
+        <tbody data-lessons="table"></tbody>
+      </table>
+      <div class="tt-list" aria-hidden="true" data-lessons="list"></div>
+      <div class="tt-note" data-lessons="legend"></div>
+    </div>
+    <aside>
+      <div class="hours">
+        <h3>Fitclub</h3><p class="sub">Otváracie hodiny</p>
+        <div data-hours="fitclub" data-view="aside"></div>
+      </div>
+    </aside>
+  </div>
+</div></section>
+
+<div class="dline"></div>
+<section class="sec white" id="lekcie"><div class="wrap">
+  <div class="head-c"><h2 class="big">Lekcie a lektori</h2><p>Na lekciách sa stretávame v skupinách do 20 ľudí.<br>O priebeh každej lekcie sa stará náš skúsený lektor.</p></div>
+  <div class="comb" data-lessons="cards"></div>
+</div></section>
+
+<div class="dline"></div>
+<section class="sec darker" id="cennik"><div class="wrap">
+  <div class="head-split"><h2 class="big">Cenník fitclubu</h2><div><p class="when" data-prices="since">Platí od 1. februára 2026</p><p><span class="nw">Pre využívanie permanentiek je potrebný</span> <span class="nw">klubový preukaz za&nbsp;<span data-price="club">2&nbsp;€</span>.</span><br>S kartou ISIC, ITIC alebo EYCA ho máte zadarmo.</p></div><div class="pmode" data-prices="mode"></div></div>
+  <div class="plans" data-prices="plans"></div>
+  <div class="pricelist">
+    <div data-prices="rows" data-col="0"></div>
+    <div>
+      <div data-prices="rows" data-col="1"></div>
+      <div data-lessons="prices"></div>
+    </div>
+  </div>
+
+  <div class="benefits" id="vyhody">
+    <div>
+      <h3>Výhody</h3><p>Pre všetkých, ktorí u nás cvičia.</p>
+      <ul class="blist">
+        <li><b>Narodeniny a meniny</b><span>vstup s platným klubovým preukazom</span><em>zdarma</em></li>
+        <li><b>Bežiace pásy a bicykle</b><span>samostatné kardio stroje bez príplatku</span><em>zdarma</em></li>
+        <li><b><a class="msl" href="https://multi-sport.sk/aktivity/partner/fitclub-san-van/" target="_blank" rel="noopener">Karty MultiSport</a></b><span>vstup na kartu MultiSport</span><em>áno</em></li>
+        <li><b>Platba v hotovosti</b><span>aj kartou</span><em>áno</em></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Zľavy</h3><p>Zľavy sa nedajú kombinovať.</p>
+      <ul class="blist">
+        <li><b>Dôchodcovia</b><span>6-mesačné permanentky vo fitclube, permanentky do sauny</span><em>−10 %</em></li>
+        <li><b>ISIC, ITIC, EYCA</b><span>vybrané 6-mesačné permanentky, klubový preukaz zdarma</span><em>−10 %</em></li>
+        <li><b>Privediete nového člena</b><span>na vašu ďalšiu permanentku</span><em>−10 %</em></li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<div class="dline"></div>
+<section class="sec dark" id="galeria"><div class="wrap">
+  <div class="head-l"><div class="t wide"><h2 class="big">Priestory fitclubu</h2><p>Nahliadnite do našich priestorov. Pozrite si posilňovňu, telocvičňu a kardio zónu.</p></div></div>
+  <div class="gallery">
+    <figure class="g1"><img class="photo-grade" src="assets/gal-09.jpg" alt="Cvičenie na stroji v posilňovni" loading="lazy"><figcaption>Posilňovňa</figcaption></figure>
+    <figure class="g2"><img class="photo-grade" src="assets/gal-07.jpg" alt="Bežiaci pás v kardio zóne" loading="lazy"><figcaption>Bežiace pásy a kardio</figcaption></figure>
+    <figure class="g3"><img class="photo-grade" src="assets/gal-03.jpg" alt="Silový tréning v posilňovni fitclubu" loading="lazy"><figcaption>Silový tréning</figcaption></figure>
+    <figure class="g4"><img class="photo-grade" src="assets/fit-14.jpg" alt="Bicykle na indoor cycling" loading="lazy"><figcaption>Indoor cycling</figcaption></figure>
+    <figure class="g5"><img class="photo-grade" src="assets/fit-13.jpg" alt="Recepcia fitclubu" loading="lazy"><figcaption>Recepcia fitclubu</figcaption></figure>
+    <figure class="g6"><img class="photo-grade" src="assets/fit-18.jpg" alt="Skupinová lekcia indoor cyclingu v telocvični" loading="lazy"><figcaption>Skupinové cvičenia</figcaption></figure>
+    <figure class="g7"><img class="photo-grade" src="assets/fit-hex1.jpg" alt="Posilňovacie stroje vo fitclube" loading="lazy"><figcaption>Stroje</figcaption></figure>
+  </div>
+</div></section>
+
+<div class="dline"></div>
+<section class="contact" id="kontakt">
+  <div class="map">
+    <div class="t"><h2>Kde nás nájdete</h2><p>Fitclub nájdete na Československej armády v Starom Meste Košíc, dobre dostupný MHD.</p>
+      
+    </div>
+    <div class="mapbox">
+      <img class="fallback photo-grade" src="assets/ulica-csl-armady.jpg" alt="Ulica Československej armády s električkou, kde sídli fitclub" loading="lazy">
+      <a class="mapopen" href="https://www.google.com/maps/search/?api=1&amp;query=Fitclub%20San-Van%2C%20%C4%8Ceskoslovenskej%20arm%C3%A1dy%201168/11%2C%20Ko%C5%A1ice" target="_blank" rel="noopener">Otvoriť v Mapách Google</a>
+      <iframe title="Mapa Google: Fitclub San-Van" data-src="https://maps.google.com/maps?q=Fitclub%20San-Van%2C%20%C4%8Ceskoslovenskej%20arm%C3%A1dy%201168/11%2C%20040%2001%20Ko%C5%A1ice&amp;z=16&amp;hl=sk&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="info">
+    <div class="addr-card"><h3>Fitclub San-Van</h3><p><a class="ml" href="https://www.google.com/maps/dir/?api=1&amp;destination=Fitclub%20San-Van%2C%20%C4%8Ceskoslovenskej%20arm%C3%A1dy%201168%2F11%2C%20040%2001%20Ko%C5%A1ice" target="_blank" rel="noopener" title="Navigovať v Mapách Google">Československej armády 11<br>040 01 Košice</a></p><p class="ph num"><a class="tl" href="tel:+421556255645">055 625 56 45</a></p><p><a class="tl" href="mailto:info@sanvan.sk">info@sanvan.sk</a></p><a class="rt" href="https://www.google.com/maps/search/?api=1&amp;query=Fitclub%20San-Van%2C%20%C4%8Ceskoslovenskej%20arm%C3%A1dy%201168%2F11%2C%20Ko%C5%A1ice" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>4,5 z 5 (40 recenzií na Google)</a></div>
+    
+    <p class="park"><b>Parkovanie:</b> Parkovať môžete pri vchode do fitclubu, pri vchode do sauny alebo na veľkom parkovisku za Miestnym úradom mestskej časti Košice-Staré Mesto na Strojárenskej ulici.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="dline"></div>
+  <div class="wrap top">
+    <div><img src="assets/logo.png" alt="San-Van" width="133" height="114"><p class="fname">Fitclub San-Van<br>Posilňovňa a Sauna<br>Košice</p><p>IČO 17 245 796<br><a href="mailto:info@sanvan.sk">info@sanvan.sk</a></p></div>
+    <div><h2 class="fh">Fitclub</h2><ul><li><a class="ml" href="https://www.google.com/maps/dir/?api=1&amp;destination=Fitclub%20San-Van%2C%20%C4%8Ceskoslovenskej%20arm%C3%A1dy%201168%2F11%2C%20040%2001%20Ko%C5%A1ice" target="_blank" rel="noopener" title="Navigovať v Mapách Google">Československej armády 11<br>040 01 Košice</a></li><li class="num"><a class="tl" href="tel:+421556255645">055 625 56 45</a></li><li><a class="msl" href="https://multi-sport.sk/aktivity/partner/fitclub-san-van/" target="_blank" rel="noopener">Partner MultiSport</a></li></ul></div>
+    <div><h2 class="fh">Sauna</h2><ul><li><a class="ml" href="https://www.google.com/maps/dir/?api=1&amp;destination=Sauna%20San-Van%2C%20Stroj%C3%A1rensk%C3%A1%201377%2C%20040%2001%20Ko%C5%A1ice" target="_blank" rel="noopener" title="Navigovať v Mapách Google">Strojárenská 4<br>040 01 Košice</a></li><li class="num"><a class="tl" href="tel:+421948340100">0948 340 100</a></li></ul></div>
+    <div><h2 class="fh">Navigácia</h2><ul class="fnav"><li class="g"><a href="index.html">Úvod</a></li><li><a href="index.html#prevadzky">Naše prevádzky</a></li><li><a href="index.html#kontakt">Kontakt</a></li><li class="g"><a href="fitclub.html">Fitclub</a></li><li><a href="fitclub.html#rozvrh">Hodiny a lekcie</a></li><li><a href="fitclub.html#cennik">Cenník</a></li><li class="g"><a href="sauna.html">Sauna</a></li><li><a href="sauna.html#sauna-hodiny">Otváracie hodiny</a></li><li><a href="sauna.html#sauna-cennik">Cenník</a></li></ul></div>
+  </div>
+  <div class="wrap socrow"><div class="social"><a class="fb" href="https://www.facebook.com/fitclubsanvan/" target="_blank" rel="noopener" aria-label="Fitclub San-Van na Facebooku"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11.6" fill="#fff"/><path fill="#0866ff" d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>Fitclub na Facebooku</a><a class="fb gg" href="https://www.google.com/maps/search/?api=1&amp;query=Fitclub%20San-Van%2C%20%C4%8Ceskoslovenskej%20arm%C3%A1dy%201168%2F11%2C%20Ko%C5%A1ice" target="_blank" rel="noopener" aria-label="Fitclub San-Van na Google"><span class="gbg"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span>Fitclub na Google</a><a class="fb gg" href="https://www.google.com/maps/search/?api=1&amp;query=Sauna%20San-Van%2C%20Stroj%C3%A1rensk%C3%A1%201377%2C%20Ko%C5%A1ice" target="_blank" rel="noopener" aria-label="Sauna San-Van na Google"><span class="gbg"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span>Sauna na Google</a></div></div>
+  <div class="wrap bot"><span class="legal"><span>© <span id="yr">2026</span> San-Van, Košice</span><a href="ochrana-osobnych-udajov.html">Ochrana osobných údajov</a><a href="#cookies" data-cookie-settings>Nastavenia cookies</a></span><span>Fotografie okolia: „Košice, Hviezdoslavova 7" (bogdan1971, CC BY-SA 3.0) a „Vario na Československej armády" (Of, CC BY-SA 4.0), via Wikimedia Commons. Ostatné fotografie sú zo súčasných webov San-Van.</span></div>
+</footer>
+<div class="cc" id="cookies" role="dialog" aria-modal="false" aria-labelledby="cc-t" hidden>
+  <div class="cc-in">
+    <div class="cc-txt">
+      <h2 id="cc-t">Cookies</h2>
+      <p>Na fungovanie webu používame cookies. Svoju voľbu môžete kedykoľvek zmeniť v pätičke. Viac v <a href="ochrana-osobnych-udajov.html#cookies">Ochrane osobných údajov</a>.</p>
+      <div class="cc-set" hidden>
+        <label class="cc-row"><input type="checkbox" checked disabled><span><b>Nevyhnutné</b>Uloženie vašej voľby o cookies. Bez nich web nefunguje, preto sú vždy zapnuté.</span></label>
+        <label class="cc-row"><input type="checkbox" data-k="maps"><span><b>Mapy Google</b>Interaktívna mapa v časti „Kde nás nájdete". Google pri jej načítaní ukladá cookies a spracúva vašu IP adresu.</span></label>
+      </div>
+    </div>
+    <div class="cc-btns">
+      <button type="button" class="btn btn-red" data-cc="all">Prijať všetko</button>
+      <button type="button" class="btn btn-ghost" data-cc="none">Len nevyhnutné</button>
+      <button type="button" class="cc-link" data-cc="toggle" aria-expanded="false">Nastavenia</button>
+      <button type="button" class="btn btn-ghost" data-cc="save" hidden>Uložiť výber</button>
+    </div>
+  </div>
+</div>
+<script src="data.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
