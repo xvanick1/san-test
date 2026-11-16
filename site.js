@@ -320,7 +320,8 @@
     box.classList.toggle('nomap', !on);
     /* so súhlasom sa mapy načítajú, po odvolaní súhlasu (len nevyhnutné) sa zrušia a ostane fotka */
     frs.forEach(f => {
-      if (on && !f.getAttribute('src')) f.src = f.dataset.src;
+      /* so súhlasom sa mapa načíta hneď pri otvorení stránky (nie až pri doskrolovaní), takže je pripravená, kým k nej návštevník príde */
+      if (on && !f.getAttribute('src')) { f.loading = 'eager'; f.src = f.dataset.src; }
       if (!on && f.getAttribute('src')) { f.src = 'about:blank'; f.removeAttribute('src'); f.classList.remove('ready'); }
     });
   };
