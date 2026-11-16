@@ -428,7 +428,9 @@ h4 .per{font-weight:600;color:#9a9a9a;margin-left:8px}
 .contact .mapbox{flex:1;position:relative;min-height:440px;overflow:hidden;background:#1a1a1a}
 .contact .mapbox iframe,.contact .mapbox .fallback{position:absolute;inset:0;width:100%;height:100%;border:0}
 .contact .mapbox .fallback{object-fit:cover}
-.contact .mapbox iframe{z-index:2}.contact .mapbox iframe[hidden],.contact .mapbox .fallback[hidden]{display:none}
+.contact .mapbox iframe{z-index:2;opacity:0;transition:opacity .3s}.contact .mapbox iframe.ready{opacity:1}
+/* so súhlasom s mapou sa fotka nezobrazuje ani počas načítania mapy (tmavá plocha), fotka je len bez súhlasu alebo pri zablokovaní */
+.contact .mapbox:not(.nomap) .fallback{visibility:hidden}.contact .mapbox iframe[hidden],.contact .mapbox .fallback[hidden]{display:none}
 .contact .mapopen{display:none;position:absolute;left:24px;bottom:24px;z-index:3;font:700 14px var(--h);letter-spacing:.06em;text-transform:uppercase;padding:13px 18px;background:#fff;color:var(--ink)}
 .contact .mapopen:hover{background:#e6e6e6}
 .contact .mapbox.nomap iframe{display:none}.contact .mapbox.nomap .mapopen{display:inline-block}

@@ -311,6 +311,8 @@
     : [{ src: fr0.dataset.src, href: open.href }];
   /* pre každú prevádzku vlastný iframe a vlastná fotka */
   const frs = venues.map((v, i) => { if (!i) return fr0; const f = fr0.cloneNode(); f.removeAttribute('src'); f.dataset.src = v.src; f.hidden = true; box.insertBefore(f, open); return f; });
+  /* mapa sa ukáže až po načítaní (dovtedy tmavá plocha, nie fotka), takže pri súhlase nebliká fotka */
+  frs.forEach(f => f.addEventListener('load', () => f.classList.toggle('ready', !!f.getAttribute('src'))));
   const phs = venues.map((v, i) => { if (!i) { ph0.loading = 'eager'; return ph0; } const p = ph0.cloneNode(); p.src = v.photo; p.alt = v.alt; p.loading = 'eager'; p.hidden = true; box.insertBefore(p, ph0.nextSibling); return p; });
   let cur = 0, blocked = false;
   const show = () => {
@@ -319,7 +321,7 @@
     /* so súhlasom sa mapy načítajú, po odvolaní súhlasu (len nevyhnutné) sa zrušia a ostane fotka */
     frs.forEach(f => {
       if (on && !f.getAttribute('src')) f.src = f.dataset.src;
-      if (!on && f.getAttribute('src')) { f.src = 'about:blank'; f.removeAttribute('src'); }
+      if (!on && f.getAttribute('src')) { f.src = 'about:blank'; f.removeAttribute('src'); f.classList.remove('ready'); }
     });
   };
   const pick = i => {
